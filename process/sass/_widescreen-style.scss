@@ -1,0 +1,23 @@
+$min-breakpoint-largescreen: 1200px;
+@media(min-width: $min-breakpoint-largescreen){
+.grid {
+        display: grid;
+        height: auto;
+        width:1200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-right:auto;
+        margin-left: auto;
+        div {
+            text-align: center;
+            vertical-align: middle;
+            height: 100px;
+            background-color: #7F7F65;
+            border: 2px;
+            border-color: black;
+            border-style: solid;
+        }
+        div:nth-child(even) {
+            background-color: #FFFB7E;
+        }
+    }
+}

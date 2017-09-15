@@ -1,0 +1,22 @@
+$breakpoint-pc : 800px;
+
+@media(max-width : $breakpoint-pc){
+    .grid{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        
+        div{
+            text-align: center;
+            vertical-align: middle;
+            height: 100px;
+            background-color: #7F7F65;
+        border: 2px;
+            border-color: black;
+            border-style: solid;
+        }
+           div:nth-child(even){
+            background-color: #FFFB7E;
+        }
+    } 
+}
